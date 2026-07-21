@@ -1,0 +1,3565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:common="https://soap.api.nav.gov.hu/definitions/model/2.0/common/1.0"
+        xmlns:meta="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+        xmlns:tns="https://soap.api.nav.gov.hu/definitions/model/2.0/NAV_F01/1.24"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        targetNamespace="https://soap.api.nav.gov.hu/definitions/model/2.0/NAV_F01/1.24">
+   <import namespace="https://api.nav.gov.hu/definitions/form_xsd_metaschema/1.0"
+           schemaLocation="form_xsd_metaschema.xsd"/>
+   <import namespace="https://soap.api.nav.gov.hu/definitions/model/2.0/common/1.0"
+           schemaLocation="common.xsd"/>
+   <element name="Doc_NAV_F01"
+            type="tns:Doc_NAV_F01_Type"
+            meta:metaType="DocMetaType">
+      <annotation>
+         <documentation>Fémkereskedelmi/ koncesszori fémkereskedelmi engedély kérelem</documentation>
+      </annotation>
+      <xs:unique name="uniqueFileId_Attachment_1">
+         <xs:selector xpath="Form_NAV_F01/Attachment_1"/>
+         <xs:field xpath="fileId"/>
+      </xs:unique>
+   </element>
+   <simpleType name="Enum_NAV_F01_0A0001E0121ZA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="M"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0A0001G0142ZA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="I"/>
+         <enumeration value="N"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0001AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0003AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0004AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0005AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0006AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0007AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0008AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0009AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0010AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0011AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0012AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0013AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0014AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0015AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0016AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0017AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0018AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0019AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0020AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0021AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0022AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0023AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0024AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0025AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0026AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0027AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0028AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0002AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0029AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0030AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0031AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0032AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0033AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0034AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0035AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0036AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0037AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0BXXXXC0038AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0DXXXXC0001BA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0DXXXXC0001AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0DXXXXC0002BA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0DXXXXC0002AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0DXXXXC0003BA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0DXXXXC0003AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0DXXXXC0004BA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0DXXXXC0004AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0DXXXXC0005BA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0DXXXXC0005AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0DXXXXC0006BA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0DXXXXC0006AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0DXXXXC0007BA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="1"/>
+         <enumeration value="2"/>
+         <enumeration value="3"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0DXXXXC0007AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXC0106ZA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="U"/>
+         <enumeration value="M"/>
+         <enumeration value="T"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0023AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0001AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0002AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0003AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0004AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0005AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0006AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0007AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0008AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0009AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0010AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0011AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0012AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0013AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0014AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0015AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0016AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0017AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0018AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0019AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0020AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0021AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0022AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0024AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0025AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0026AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <simpleType name="Enum_NAV_F01_0FXXXXD0027AA">
+      <annotation>
+         <documentation>Enum értékek </documentation>
+      </annotation>
+      <restriction base="xs:string">
+         <enumeration value="Al"/>
+         <enumeration value="Sb"/>
+         <enumeration value="Bi"/>
+         <enumeration value="Zn"/>
+         <enumeration value="Zr"/>
+         <enumeration value="Cd"/>
+         <enumeration value="Co"/>
+         <enumeration value="Cr"/>
+         <enumeration value="Mg"/>
+         <enumeration value="Mn"/>
+         <enumeration value="Mo"/>
+         <enumeration value="Ni"/>
+         <enumeration value="Pb"/>
+         <enumeration value="Sn"/>
+         <enumeration value="Cu"/>
+         <enumeration value="Ta"/>
+         <enumeration value="Ti"/>
+         <enumeration value="V"/>
+         <enumeration value="Fe"/>
+         <enumeration value="W"/>
+         <enumeration value="Xx"/>
+      </restriction>
+   </simpleType>
+   <complexType name="Doc_NAV_F01_Type">
+      <annotation>
+         <documentation>A teljes bizonylat szerkezetet leíró típus</documentation>
+      </annotation>
+      <sequence>
+         <element name="Form_NAV_F01"
+                  type="tns:Form_NAV_F01_Type"
+                  minOccurs="1"
+                  maxOccurs="1"
+                  meta:metaType="FormMetaType">
+            <annotation>
+               <documentation>NAV_F01 részbizonylat</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Form_NAV_F01_Type">
+      <annotation>
+         <documentation>A teljes nyomtatvány NAV_F01 részbiztonylatának szerkezetét leíró típus.</documentation>
+      </annotation>
+      <sequence>
+         <element name="Block_120001"
+                  type="tns:Block_NAV_F01_120001_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Azonosító adatok</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120010"
+                  type="tns:Block_NAV_F01_120010_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Pénzforgalmi adatok</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120015"
+                  type="tns:Block_NAV_F01_120015_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Cégvezető adatai</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120017"
+                  type="tns:Block_NAV_F01_120017_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Kapcsolattartók</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120038"
+                  type="tns:Block_NAV_F01_120038_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Nyilatkozatok</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120040"
+                  type="tns:Block_NAV_F01_120040_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Biztosíték adatok</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120050"
+                  type="tns:Block_NAV_F01_120050_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Csatolt okiratok</documentation>
+            </annotation>
+         </element>
+         <element name="Block_120124"
+                  type="tns:Block_NAV_F01_120124_Type"
+                  minOccurs="0"
+                  meta:metaType="BlockMetaType">
+            <annotation>
+               <documentation>Betétlap</documentation>
+            </annotation>
+         </element>
+         <element name="Attachment_1"
+                  type="common:AttachmentType"
+                  minOccurs="0"
+                  maxOccurs="unbounded"
+                  meta:metaType="AttachmentMetaType">
+            <annotation>
+               <documentation>Csatolmány; File Extensions:*</documentation>
+            </annotation>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Block_NAV_F01_120001_Type">
+      <annotation>
+         <documentation>Azonosító adatok</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120002"
+                  type="tns:FieldGroup_NAV_F01_120002_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Azonosító adatok</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120009"
+                  type="tns:FieldGroup_NAV_F01_120009_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Bejelentés azonosítására vonatkozó adatok</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120091"
+                  type="tns:FieldGroup_NAV_F01_120091_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Tevékenység azonosítása</documentation>
+            </annotation>
+         </element>
+         <element name="FieldGroup_120014"
+                  type="tns:FieldGroup_NAV_F01_120014_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Hitelesítésre vonatkozó adatok</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_NAV_F01_120010_Type">
+      <annotation>
+         <documentation>Pénzforgalmi adatok</documentation>
+      </annotation>
+      <all>
+         <element name="Chain_120261"
+                  type="tns:Chain_NAV_F01_120261_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>Pénzforgalmi adatok</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_NAV_F01_120015_Type">
+      <annotation>
+         <documentation>Cégvezető adatai</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120016"
+                  type="tns:FieldGroup_NAV_F01_120016_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Cégvezető adatai</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_NAV_F01_120017_Type">
+      <annotation>
+         <documentation>Kapcsolattartók</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120213"
+                  type="tns:FieldGroup_NAV_F01_120213_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Személy azonosító xml-hez</documentation>
+            </annotation>
+         </element>
+         <element name="Chain_120019"
+                  type="tns:Chain_NAV_F01_120019_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>Kapcsolattartók adatai</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_NAV_F01_120038_Type">
+      <annotation>
+         <documentation>Nyilatkozatok</documentation>
+      </annotation>
+      <all>
+         <element name="FieldGroup_120039"
+                  type="tns:FieldGroup_NAV_F01_120039_Type"
+                  minOccurs="0"
+                  meta:metaType="FieldGroupMetaType">
+            <annotation>
+               <documentation>Nyilatkozatokra vonatkozó adatok</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_NAV_F01_120040_Type">
+      <annotation>
+         <documentation>Biztosíték adatok</documentation>
+      </annotation>
+      <all>
+         <element name="Chain_120302"
+                  type="tns:Chain_NAV_F01_120302_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>Biztosítékra vonatkozó adatok</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_NAV_F01_120050_Type">
+      <annotation>
+         <documentation>Csatolt okiratok</documentation>
+      </annotation>
+      <all>
+         <element name="Chain_120214"
+                  type="tns:Chain_NAV_F01_120214_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>Csatolt okiratokra vonatkozó adatok</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Block_NAV_F01_120124_Type">
+      <annotation>
+         <documentation>Betétlap</documentation>
+      </annotation>
+      <all>
+         <element name="Chain_120126"
+                  type="tns:Chain_NAV_F01_120126_Type"
+                  minOccurs="0"
+                  meta:metaType="ChainMetaType">
+            <annotation>
+               <documentation>Tevékenység végzés helye</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="Chain_NAV_F01_120261_Type">
+      <annotation>
+         <documentation>Pénzforgalmi adatok</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_header" minOccurs="0">
+            <annotation>
+               <documentation>Lánc nem ismétlődő elemei (felületen előtte vagy utána jelennek meg)</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120262"
+                           type="tns:FieldGroup_NAV_F01_120262_Type"
+                           minOccurs="0"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Egyedi lánc eleme elől</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="3762">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120012"
+                           type="tns:FieldGroup_NAV_F01_120012_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Pénzforgalmi adatok</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Chain_NAV_F01_120019_Type">
+      <annotation>
+         <documentation>Kapcsolattartók adatai</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="18">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120020"
+                           type="tns:FieldGroup_NAV_F01_120020_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Kapcsolattartók adatai</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Chain_NAV_F01_120302_Type">
+      <annotation>
+         <documentation>Biztosítékra vonatkozó adatok</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_header" minOccurs="0">
+            <annotation>
+               <documentation>Lánc nem ismétlődő elemei (felületen előtte vagy utána jelennek meg)</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120303"
+                           type="tns:FieldGroup_NAV_F01_120303_Type"
+                           minOccurs="0"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Egyedi lánc eleme elől</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="693">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120043"
+                           type="tns:FieldGroup_NAV_F01_120043_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Biztosítékra vonatkozó adatok</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Chain_NAV_F01_120214_Type">
+      <annotation>
+         <documentation>Csatolt okiratokra vonatkozó adatok</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_header" minOccurs="0">
+            <annotation>
+               <documentation>Lánc nem ismétlődő elemei (felületen előtte vagy utána jelennek meg)</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120215"
+                           type="tns:FieldGroup_NAV_F01_120215_Type"
+                           minOccurs="0"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Egyedi lánc eleme elől</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="3465">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120052"
+                           type="tns:FieldGroup_NAV_F01_120052_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Csatolt okiratokra vonatkozó adatok</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Chain_NAV_F01_120126_Type">
+      <annotation>
+         <documentation>Tevékenység végzés helye</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="99">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120130"
+                           type="tns:FieldGroup_NAV_F01_120130_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Tevékenység végzés helye</documentation>
+                     </annotation>
+                  </element>
+                  <element name="Chain_120128"
+                           type="tns:Chain_NAV_F01_120128_Type"
+                           minOccurs="0"
+                           meta:metaType="ChainMetaType">
+                     <annotation>
+                        <documentation>Kapacitások</documentation>
+                     </annotation>
+                  </element>
+                  <element name="Chain_120140"
+                           type="tns:Chain_NAV_F01_120140_Type"
+                           minOccurs="0"
+                           meta:metaType="ChainMetaType">
+                     <annotation>
+                        <documentation>Anyagkísérő okmány aláírói</documentation>
+                     </annotation>
+                  </element>
+                  <element name="Chain_120146"
+                           type="tns:Chain_NAV_F01_120146_Type"
+                           minOccurs="0"
+                           meta:metaType="ChainMetaType">
+                     <annotation>
+                        <documentation>Kapcsolattartók</documentation>
+                     </annotation>
+                  </element>
+                  <element name="Chain_120191"
+                           type="tns:Chain_NAV_F01_120191_Type"
+                           minOccurs="0"
+                           meta:metaType="ChainMetaType">
+                     <annotation>
+                        <documentation>Nyitvatartási idő</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+      <attribute name="sdgID" use="required" fixed="120125"/>
+   </complexType>
+   <complexType name="Chain_NAV_F01_120128_Type">
+      <annotation>
+         <documentation>Kapacitások</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="729">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120137"
+                           type="tns:FieldGroup_NAV_F01_120137_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Kapacitások</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Chain_NAV_F01_120140_Type">
+      <annotation>
+         <documentation>Anyagkísérő okmány aláírói</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="100">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120142"
+                           type="tns:FieldGroup_NAV_F01_120142_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Anyagkísérő okmány aláírói</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Chain_NAV_F01_120146_Type">
+      <annotation>
+         <documentation>Kapcsolattartók</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="100">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120147"
+                           type="tns:FieldGroup_NAV_F01_120147_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Kapcsolattartók</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="Chain_NAV_F01_120191_Type">
+      <annotation>
+         <documentation>Nyitvatartási idő</documentation>
+      </annotation>
+      <sequence>
+         <element name="Chain_elem" minOccurs="0" maxOccurs="1">
+            <annotation>
+               <documentation>Lánc ismétlődő elemei</documentation>
+            </annotation>
+            <complexType>
+               <sequence>
+                  <element name="FieldGroup_120145"
+                           type="tns:FieldGroup_NAV_F01_120145_Type"
+                           minOccurs="1"
+                           meta:metaType="FieldGroupMetaType">
+                     <annotation>
+                        <documentation>Nyitvatartási idő</documentation>
+                     </annotation>
+                  </element>
+               </sequence>
+            </complexType>
+         </element>
+      </sequence>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120002_Type">
+      <annotation>
+         <documentation>Azonosító adatok</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001E0131ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adószáma (IKTATO.ADOIG)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="11"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0132ZA"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Közösségi adószám: (GTR.KOZADOIG)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E001H"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Hibásnak minősített nyomtatvány vonalkódja (hibasvonalkod)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0121ZA"
+                  minOccurs="0"
+                  type="tns:Enum_NAV_F01_0A0001E0121ZA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Művelet: (FER_KER_HAT.MUVKOD)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E0122ZA"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Érvényesség dátuma: (FER_KER_HAT.ERVDAT)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E0123ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Neve: (IKTATO.NEV)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="70"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0124ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Gazdálkodási forma: (GTR.GAZDFORMA)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="30"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0125ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Rövidített név: (GTR.NEVROVID)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="30"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0126ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Engedélyszám (IKTATO.ENGSZ)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="8"/>
+                  <pattern value="[A-Z0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0127ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Cégbírósági bejegyzés száma: (GTR.CEGBBSZ)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="50"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0128ZA"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kelte: (GTR.CEGBBDAT)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E0133ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Székhely cím: (IKTATO.CIM_1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="9"/>
+                  <pattern value="[A-Z0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0134ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Város/község (IKTATO.CIM_2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="30"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0135ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>utca/ út (IKTATO.CIM_3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="41"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0136ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Hsz. (IKTATO.CIM_4)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0137ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Levelezési cím: (IKTATO.LCIM_1)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="9"/>
+                  <pattern value="[A-Z0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0138ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Város/község (IKTATO.LCIM_2)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="30"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0139ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>utca/ út (IKTATO.LCIM_3)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="41"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0140ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Hsz. (IKTATO.LCIM_4)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0148ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Letelepedés helye szerinti állam: (FER_KER_FEJ.ALLAM)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="50"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0149ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Szervezet nyilvántartásba vételi száma: (FER_KER_FEJ.NYILVSZAM)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="50"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E0150ZA"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kelte: (FER_KER_FEJ.NYILVKELT)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E00581A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Koncesszori alvállalkozói nyilvántartási száma: (FER_KER_FEJ.konc_nyilvszam)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="18"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001E00582A"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>A koncesszori alvállalkozói szerződés érvényességének vége: (FER_KER_FEJ.konc_evege)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120009_Type">
+      <annotation>
+         <documentation>Bejelentés azonosítására vonatkozó adatok</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001F0119ZA"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Hiánypótlás (HIANYPOTLAS)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001E0152ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Hivatkozott beküldési azonosító (IKTATO.KAPCS_XML_ID)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="27"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001F0109ZA"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>F1 lap: (F1KIT)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001F0111ZA"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>F2 lap: (F2KIT)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001F0113ZA"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>F3 lap: (F3KIT)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001F0115ZA"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>F4 lap: (F4KIT)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001F0117ZA"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>F5 lap: (F5KIT)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001F0110ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kitöltött lapok száma (F1DB)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001F0112ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(F2DB)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001F0114ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(F3DB)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001F0116ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(F4DB)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001F0118ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(F5DB)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120091_Type">
+      <annotation>
+         <documentation>Tevékenység azonosítása</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001G0142ZA"
+                  minOccurs="0"
+                  type="tns:Enum_NAV_F01_0A0001G0142ZA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tevékenység gyakorlásának módja: (FER_KER_FEJ.TELEPHELY)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001G0151ZA"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Határon átnyúló tevékenység (FER_KER_FEJ.HATAR)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001G0141ZA"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Engedély lejáratának ideje a környezetvédelmi hatóság által kiadott engedély érvényességétől eltérő kérelem esetén: (FER_KER_FEJ.ENG_LEJARAT)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120014_Type">
+      <annotation>
+         <documentation>Hitelesítésre vonatkozó adatok</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0A0001H0143ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Aláírás helysége (KELTHELY)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="30"/>
+                  <pattern value="[^0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0A0001H0144ZA"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>év.hó.nap (IKTATO.BKELT)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0A0001H0145ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bejelentő azonosító (BEJAZON)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120016_Type">
+      <annotation>
+         <documentation>Cégvezető adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0C0001C0105ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Neve: (FER_KER_SZADAT.NEV)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0106ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Születési helye, ideje: (FER_KER_SZADAT.SZULHELY)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="30"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0107ZA"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(FER_KER_SZADAT.SZULIDO)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0C0001C0108ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Anyja neve: (FER_KER_SZADAT.ANYJANEVE)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0109ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Állampolgársága: (FER_KER_SZADAT.ALLAMPOLG)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0110ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Lakóhelye: (FER_KER_SZADAT.IRSZ)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="9"/>
+                  <pattern value="[A-Z0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0111ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Város/község (FER_KER_SZADAT.VAROS)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="30"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0112ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>utca/ út (FER_KER_SZADAT.CIM)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="41"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0113ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Hsz. (FER_KER_SZADAT.HSZ)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0114ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Adóazonosító jele: (FER_KER_SZADAT.ADOAZON)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0123ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Útlevél száma: (FER_KER_SZADAT.UTLEVEL)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0120ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(FER_KER_SZADAT.SORSZ_CV)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001C0121ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(FER_KER_SZADAT.SZEMTIPUS_CV)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120213_Type">
+      <annotation>
+         <documentation>Személy azonosító xml-hez</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0C0001D0122ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(FER_KER_SZADAT.SZEMTIPUS_KT)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120039_Type">
+      <annotation>
+         <documentation>Nyilatkozatokra vonatkozó adatok</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0C0001E0115ZA"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Egyéb köztartozásról: (FER_KER_FEJ.EKOZT)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0C0001E0117ZA"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csőd-, felszámolási-, vagy végelszámolási eljárásról: (FER_KER_FEJ.ELJ)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0C0001E0118ZA"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kettős könyvvezetésről: (FER_KER_FEJ.KETKONYV)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0C0001E0119ZA"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Éves beszámoló hitelesítéséről: (FER_KER_FEJ.BESZAMOL)</documentation>
+            </annotation>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120012_Type">
+      <annotation>
+         <documentation>Pénzforgalmi adatok</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0BXXXXC0001DA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Sorsz. (F1_SORSZ_01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0BXXXXC0001AA"
+                  minOccurs="0"
+                  type="tns:Enum_NAV_F01_0BXXXXC0001AA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Művelet (F1_MUVKOD_01)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0BXXXXC0001BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bank neve (F1_BANK_01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="50"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0BXXXXC0001CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Pénzforgalmi jelzőszáma (F1_PFJ_01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="24"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0BXXXXC50000A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Külföldi pénzforgalmi jelzőszáma (F1_KPFJ_01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="50"/>
+                  <pattern value="[A-Z0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120262_Type">
+      <annotation>
+         <documentation>Egyedi lánc eleme elől</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0BXXXXB0102ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Lapszám: (F1_LAPSZAM)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120020_Type">
+      <annotation>
+         <documentation>Kapcsolattartók adatai</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0C0001D0001DA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Sorsz. (F2_SORSZ_01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001D0001AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Neve: (F2_FER_KER_SZADAT.NEV_01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001D0001BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>e-mail (F2_FER_KER_SZADAT.EMAIL_01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="50"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0C0001D0001CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tel.szám (F2_FER_KER_SZADAT.TELSZ_01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120043_Type">
+      <annotation>
+         <documentation>Biztosítékra vonatkozó adatok</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0DXXXXC0001HA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Sorsz. (F3_SORSZ_01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0DXXXXC0001AA"
+                  minOccurs="0"
+                  type="tns:Enum_NAV_F01_0BXXXXC0001AA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Művelet: (FER_KER_BIZT.MUVKOD01)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0DXXXXC0001BA"
+                  minOccurs="0"
+                  type="tns:Enum_NAV_F01_0DXXXXC0001BA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Típus: (FER_KER_BIZT.TIPUS01)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0DXXXXC0001CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Pénzintézet / biztosító társaság neve: (FER_KER_BIZT.BANKNEV01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="50"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0DXXXXC0001DA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Pénzforgalmi jelzőszáma: (FER_KER_BIZT.PFJ01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="24"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0DXXXXC0001EA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Összeg: (FER_KER_BIZT.OSSZEG01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="8"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0DXXXXC0001FA"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Érvényesség kezdete: (FER_KER_BIZT.EKEZD01)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0DXXXXC0001GA"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Érvényesség vége: (FER_KER_BIZT.EVEGE01)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0DXXXXC50038A"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Külföldi pénzforgalmi jelzőszáma: (FER_KER_BIZT.KPFJ01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="50"/>
+                  <pattern value="[A-Z0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120303_Type">
+      <annotation>
+         <documentation>Egyedi lánc eleme elől</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0DXXXXB0102ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Lapszám: (F3_LAPSZAM)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120052_Type">
+      <annotation>
+         <documentation>Csatolt okiratokra vonatkozó adatok</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0EXXXXC0001CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Sorsz. (F4_SORSZ_01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0EXXXXC0001AA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Megnevezés (FER_KER_IGAZOL.MEGNEV01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="200"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0EXXXXC0001BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Darabszám (FER_KER_IGAZOL.DB01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="4"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120215_Type">
+      <annotation>
+         <documentation>Egyedi lánc eleme elől</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0EXXXXB0102ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Lapszám: (F4_LAPSZAM)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120130_Type">
+      <annotation>
+         <documentation>Tevékenység végzés helye</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0FXXXXB0102ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Lapszám: (F5_LAPSZAM)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXC0106ZA"
+                  minOccurs="0"
+                  type="tns:Enum_NAV_F01_0A0001E0121ZA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Művelet: (FER_KER_TELEP.MUVKOD)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0FXXXXC00583A"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Koncesszori fémkereskedői tevékenység: (FER_KER_TELEP.konc_jel)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0FXXXXC0107ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Telephely engedélyszám: (FER_KER_TELEP.ENGSZ)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="13"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXC0118ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Székhely címe: (FER_KER_TELEP.SZIRSZ)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="9"/>
+                  <pattern value="[A-Z0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXC0119ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Város/község (FER_KER_TELEP.SZVAROS)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="30"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXC0120ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>utca/ út (FER_KER_TELEP.SZUTCA)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="41"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXC0121ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Hsz. (FER_KER_TELEP.SZHSZ)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXC0108ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Telephely címe: (FER_KER_TELEP.IRSZ)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="9"/>
+                  <pattern value="[A-Z0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXC0109ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Város/község (FER_KER_TELEP.VAROS)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="30"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXC0110ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>utca/ út (FER_KER_TELEP.UTCA)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="41"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXC0111ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Hsz. (FER_KER_TELEP.HSZ)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="10"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXC0112ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Hrsz. (FER_KER_TELEP.HRSZ)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="100"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXC0113ZA"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bérleti szerződés határozott időtartamra: (FER_KER_TELEP.BHIDOTOL)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0FXXXXC0114ZA"
+                  minOccurs="0"
+                  type="xs:date"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(FER_KER_TELEP.BHIDOIG)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0FXXXXC0115ZA"
+                  minOccurs="0"
+                  type="xs:boolean"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Bérleti szerződés határozatlan időtartamra: (FER_KER_TELEP.BHATLAN)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0FXXXXC0116ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Saját tulajdon esetén a tulajdoni hányad - %: (FER_KER_TELEP.TULAJH)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="3"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXE0122ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(FER_KER_SZADAT.SZEMTIPUS_AI)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXF0123ZA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>(FER_KER_SZADAT.SZEMTIPUS_TK)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120137_Type">
+      <annotation>
+         <documentation>Kapacitások</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0FXXXXD0001IA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Sorsz. (F5_KAP_SORSZ_01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXD0001AA"
+                  minOccurs="0"
+                  type="tns:Enum_NAV_F01_0FXXXXD0023AA"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Anyag megnevezése (FER_KER_HS.FTKOD01)</documentation>
+            </annotation>
+         </element>
+         <element name="Field_0FXXXXD0001BA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Mennyiség [kg] (FER_KER_HS.TARKAP01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120142_Type">
+      <annotation>
+         <documentation>Anyagkísérő okmány aláírói</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0FXXXXE0001JA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Sorsz. (F5_AL_SORSZ_01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXE0001CA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Neve (F5_FER_KER_SZADAT.NEV01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXE0001DA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Munkaköre (F5_FER_KER_SZADAT.MUNKAKOR01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXE0001EA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Beosztása (F5_FER_KER_SZADAT.BEOSZTAS01)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120147_Type">
+      <annotation>
+         <documentation>Kapcsolattartók</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0FXXXXF0021KA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Sorsz. (F_KAPCS_SORSZ_21)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="2"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXF0021FA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Neve (F5_FER_KER_SZADAT.NEV21)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="80"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXF0021GA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>e-mail (F5_FER_KER_SZADAT.EMAIL21)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="50"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXF0021HA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Tel. szám (F5_FER_KER_SZADAT.TELSZ21)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="20"/>
+                  <pattern value="\P{C}+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+   <complexType name="FieldGroup_NAV_F01_120145_Type">
+      <annotation>
+         <documentation>Nyitvatartási idő</documentation>
+      </annotation>
+      <all>
+         <element name="Field_0FXXXXG0001LA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Hétfő ¦ Nyitás (FER_KER_TELEP.HNYIT)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXG0001MA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Hétfő ¦ Zárás (FER_KER_TELEP.HZAR)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXG0002LA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kedd ¦ Nyitás (FER_KER_TELEP.KNYIT)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXG0002MA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Kedd ¦ Zárás (FER_KER_TELEP.KZAR)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXG0003LA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Szerda ¦ Nyitás (FER_KER_TELEP.SZENYIT)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXG0003MA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Szerda ¦ Zárás (FER_KER_TELEP.SZEZAR)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXG0004LA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csütörtök ¦ Nyitás (FER_KER_TELEP.CSNYIT)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXG0004MA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Csütörtök ¦ Zárás (FER_KER_TELEP.CSZAR)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXG0005LA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Péntek ¦ Nyitás (FER_KER_TELEP.PNYIT)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXG0005MA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Péntek ¦ Zárás (FER_KER_TELEP.PZAR)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXG0006LA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Szombat ¦ Nyitás (FER_KER_TELEP.SZONYIT)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXG0006MA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Szombat ¦ Zárás (FER_KER_TELEP.SZOZAR)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXG0007LA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Vasárnap ¦ Nyitás (FER_KER_TELEP.VNYIT)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+         <element name="Field_0FXXXXG0007MA"
+                  minOccurs="0"
+                  meta:metaType="FieldMetaType">
+            <annotation>
+               <documentation>Vasárnap ¦ Zárás (FER_KER_TELEP.VZAR)</documentation>
+            </annotation>
+            <simpleType>
+               <restriction base="string">
+                  <minLength value="1"/>
+                  <maxLength value="5"/>
+                  <pattern value="[0-9]+"/>
+               </restriction>
+            </simpleType>
+         </element>
+      </all>
+   </complexType>
+</schema>
